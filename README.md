@@ -132,3 +132,18 @@ The analyses can be reproduced using **Excel** with the Data Analysis Toolpak en
 - **Age of Acquisition** strongly predicts RT: earlier-acquired words are processed faster.  
 
 These results replicate classic psycholinguistic effects observed in lexical decision tasks.
+
+## Conclusion and Reflection
+
+This project examined the relationship between reaction time and several word-level features in a lexical decision task. The analyses confirmed classic psycholinguistic effects: longer words were associated with slower reaction times, more familiar words were recognized faster, high-frequency words showed shorter reaction times, and words acquired earlier in life were processed more quickly. Together, these findings replicate well-established results in the literature and demonstrate the predictive power of word length, familiarity, frequency, and age of acquisition in lexical access.
+
+Beyond the research results, the process of conducting this project provided valuable experience in data handling and documentation. This was my first time using GitHub to create and manage a README file, and I initially struggled with basic tasks such as creating a repository and opening the README file. By watching short YouTube tutorials, I learned how to set up my project, and with the guidance of ChatGPT, I was able to master Markdown syntax for structuring headings and formatting text. This allowed me to create a readable and organized README file.
+
+One of the biggest challenges I faced was finding a usable dataset. Many databases require access permissions, and some datasets only included experimental stimuli rather than participant-level data. I realized that choosing a dataset depends not only on research interest but also on whether I have the ability to interpret and analyze the data. When I found this dataset on OSF, I immediately recognized its value because of my background in cognitive science and lexical decision tasks. Although the dataset did not originally include a detailed data dictionary, I created one myself, ensuring that the variables were well-documented and interpretable for others.
+
+Writing this README reinforced the importance of transparency and reproducibility in research. My goal was not only to analyze the dataset but also to provide enough details so that others can follow the same steps and replicate the study. By documenting the dataset source, variables, analysis steps, and findings, I aimed to make the project accessible to both students and researchers who may want to explore lexical decision data themselves.
+## Dataset License
+
+The dataset used in this project, *Haro et al. (2024) Lexical Decision Data*,  
+is shared on OSF under the **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** license.  
+🔗 [Official license details](https://creativecommons.org/licenses/by-sa/4.0/)
