@@ -146,4 +146,4 @@ Writing this README reinforced the importance of transparency and reproducibilit
 
 The dataset used in this project, *Haro et al. (2024) Lexical Decision Data*,  
 is shared on OSF under the **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)** license.  
-🔗 [Official license details](https://creativecommons.org/licenses/by-sa/4.0/)
+
