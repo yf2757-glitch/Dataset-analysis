@@ -23,6 +23,50 @@ The primary goal is to examine the relationship between reaction time and word f
 - **H3 (Frequency Effect):** Higher frequency words will be recognized more quickly than lower frequency words.  
 - **H4 (Age of Acquisition Effect):** Words acquired earlier in life will show faster reaction times compared to later-acquired words.
 
+## Dataset Information
+- **Source:** Open Science Framework (OSF)  
+- **Project Link:** [https://osf.io/rvyxt](https://osf.io/rvyxt)  
+- **How to Find:**  
+  - On OSF, search with keyword: *lexical task*.  
+  - Locate the dataset titled: *AI-generated estimates of word familiarity, valence, arousal and concreteness in Spanish*.  
+  - Inside the project page, you can download the file: **Haro et al (2024) Lexical decision data.xlsx**.  
+- **File Name Adjustment:**  
+  - On my local computer, I renamed the file to **Lexical decision data.xlsx** for simplicity.  
+  - (This step is optional; you can keep the original filename if preferred.)  
+## Data Dictionary
+
+| Variable name | Readable name       | Units         | Allowed values | Definition | Synonyms | Description |
+|---------------|---------------------|---------------|----------------|------------|----------|-------------|
+| word          | Word                | Text (string) | Any Spanish word | The lexical item presented in the task | stimulus | The target word shown to participants in the lexical decision task. |
+| mean_rt       | Mean reaction time  | Milliseconds  | Positive values | Average reaction time for the word in the lexical decision task | RT | Higher values indicate slower recognition. |
+| mean_error    | Mean error rate     | Percentage (%)| 0–100           | Average error rate (%) across participants | error rate | Proportion of incorrect responses for the word. |
+| valence       | Valence rating      | 1–9 scale     | 1 = negative, 9 = positive | Emotional valence rating | affect | Perceived pleasantness/unpleasantness of the word. |
+| arousal       | Arousal rating      | 1–9 scale     | 1 = calm, 9 = highly arousing | Emotional arousal rating | activation | Degree of excitement or activation evoked by the word. |
+| conc          | Concreteness        | 1–9 scale     | Higher = more concrete | Concreteness rating | imageability | Extent to which the word refers to a tangible, perceptible entity. |
+| fam           | Familiarity         | 1–9 scale     | Higher = more familiar | Familiarity rating | subjective frequency | Degree to which the word is perceived as commonly known/used. |
+| aoa           | Age of acquisition  | Years         | Positive values | Average age at which the word is typically acquired | AoA | Lower = earlier acquired, easier/faster recognition. |
+| log_frq       | Log frequency       | Log-transformed frequency | Any real number | Word frequency (log transformed) | frequency | Higher frequency words are recognized faster. |
+| log_ctx_div   | Log context diversity | Log-transformed | Any real number | Contextual diversity of word occurrences | context diversity | Higher = word appears across more varied contexts. |
+| length        | Word length         | Letters       | Positive integers | Number of letters in the word | characters | Orthographic length of the stimulus. |
+| n             | Orthographic neighbors | Count | Positive integers | Number of words differing by one letter | neighbors | Words orthographically similar to the target. |
+| nhf           | Higher-frequency neighbors | Count | Positive integers | Number of orthographic neighbors with higher frequency | HF neighbors | Indicator of lexical competition. |
+| freq_hf       | Frequency of higher-frequency neighbors | Frequency count | Positive values | Frequency of the most frequent orthographic neighbor | — | Reflects the dominance of neighboring words. |
+| old20         | Orthographic Levenshtein Distance 20 | Distance metric | Positive values | Mean distance to the 20 closest orthographic neighbors | OLD20 | Lower = more similar to other words. |
+| bg_freq       | Background frequency | Frequency count | Positive values | Frequency in the background corpus | corpus freq | Global frequency across a reference corpus. |
+| tg_freq       | Target frequency     | Frequency count | Positive values | Frequency in the target corpus | — | Frequency within the experimental corpus. |
+| num_phon      | Number of phonemes   | Count | Positive integers | Number of phonemes in the word | phon count | Size of the phonological representation. |
+| num_syll      | Number of syllables  | Count | Positive integers | Number of syllables in the word | syllables | Basic phonological segmentation. |
+| n_phon        | Phonological neighbors | Count | Positive integers | Number of words differing by one phoneme | phon neighbors | Phonologically similar words. |
+| nhf_phon      | Higher-frequency phonological neighbors | Count | Positive integers | Number of phonological neighbors with higher frequency | HF phon neighbors | Reflects competition in spoken word recognition. |
+## Standards Compliance
+
+The chosen metadata standard for this project is the **DDI Codebook (DDI-C) standard**.
+
+### Why DDI-C?
+- The dataset is a **single experimental dataset** (lexical decision task results) rather than a large-scale longitudinal survey.  
+- DDI-C is designed for **study-level documentation** and **variable-level metadata**, which is sufficient for this type of dataset.  
+- Unlike DDI-Lifecycle, which covers the entire research process (design, collection, versioning, reuse), DDI-C focuses on **describing the dataset and its variables**, making it appropriate here.
+
 ## How to Reproduce
 
 The analyses can be reproduced using **Excel** with the Data Analysis Toolpak enabled.
@@ -88,9 +132,3 @@ The analyses can be reproduced using **Excel** with the Data Analysis Toolpak en
 - **Age of Acquisition** strongly predicts RT: earlier-acquired words are processed faster.  
 
 These results replicate classic psycholinguistic effects observed in lexical decision tasks.
-
-
-## Data Source
-- Dataset: *Lexical Decision Data.xlsx*
-- Task: Lexical decision (word vs. nonword judgment)
-- Each row = one word, with average reaction time (RT), error rate, and psycholinguistic variables.
